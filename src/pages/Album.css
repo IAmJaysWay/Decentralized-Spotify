@@ -1,0 +1,107 @@
+.albumContent {
+    padding: 10px 40px;
+}
+
+.topBan {
+    display: flex;
+    gap:30px;
+}
+
+.albumCover {
+    width:200px;
+}
+
+.albumDeets {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: rgb(205, 203, 203);
+}
+
+.title {
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.artist {
+    font-size: 20px;
+    color:white;
+}
+
+.playButton {
+    padding: 10px;
+    background-color: #1DB954;
+    width: 120px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 25px;
+    letter-spacing: 1.5px;
+    transition: transform 0.4s;
+}
+.openButton {
+    padding: 10px;
+    background-color: transparent;
+    width: 200px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: 2px solid white;
+    border-radius: 25px;
+    letter-spacing: 1.5px;
+    transition: transform 0.4s;
+}
+
+.openLogo{
+    height:20px;
+}
+
+.playButton:hover {
+    cursor: pointer;
+    transform: scale(1.05);;
+}
+
+.openButton:hover{
+    cursor: pointer;
+    transform: scale(1.05);;
+}
+
+.tableHeader {
+    border-bottom: 1px solid rgb(67, 67, 67);
+    display: flex;
+    color: rgb(125, 125, 125);
+    letter-spacing: 1.4px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.numberHeader {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+
+.titleHeader {
+    width: 80%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: start;
+}
+
+.tableContent {
+    border-bottom: 1px solid rgb(67, 67, 67);
+    display: flex;
+    color: rgb(125, 125, 125);
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 13px;
+    padding-top: 13px;
+}

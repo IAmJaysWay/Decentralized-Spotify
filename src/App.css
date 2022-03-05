@@ -1,0 +1,128 @@
+@import '~antd/dist/antd.css';
+
+.ant-layout {
+    min-height: 100vh;
+}
+
+.ant-layout-sider {
+    background-image: linear-gradient(#1e2422, #000000);
+    background-attachment:fixed;
+    width: 800px;
+    padding: 30px;
+}
+
+.ant-layout-content {
+    background-image: linear-gradient(#494B4A, #030404);
+    background-attachment:fixed;
+}
+
+.ant-layout-footer {
+    background-color: #292929;
+    padding-bottom: 4px;
+    padding-top: 15px;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before {
+    border-bottom: 0px;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: white;
+    text-shadow: 0 0 0.25px currentcolor;
+}
+
+.ant-tabs-tab-btn:focus {
+    color: white;
+}
+
+.ant-tabs-tab {
+    color: rgb(125, 125, 125);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.ant-tabs-tab:hover {
+    color: white;
+}
+
+.ant-tabs-ink-bar {
+    background: #1DB954;
+    width: 10px;
+}
+
+.ant-slider-track {
+    background-color: #1DB954;
+}
+
+.ant-slider:hover .ant-slider-track {
+    background-color: #1DB954;
+}
+
+.ant-slider-handle {
+    border: 0px
+}
+
+.ant-slider-rail {
+    background-color: #3E3E3E;
+}
+
+.logo {
+    width:50px;
+    margin-bottom: 20px;
+  }
+  
+  .searchBar {
+    border-top: 2px solid rgb(125, 125, 125);
+    border-bottom: 2px solid rgb(125, 125, 125);
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .sideBar {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  .recentPlayed {
+    border-top: 2px solid rgb(125, 125, 125);
+    border-bottom: 2px solid rgb(125, 125, 125);
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 400px);
+  }
+  
+  .recentTitle {
+    color: rgb(125, 125, 125);
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .install {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contentWindow {
+    padding: 50px 0px;
+  }
+
+  .footer {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #292929;
+    color: rgb(205, 203, 203) !important; 
+  }
+
+
+
+
+    
