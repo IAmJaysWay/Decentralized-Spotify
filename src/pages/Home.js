@@ -13,8 +13,8 @@ const Home = () => {
               <TabPane tab="FEATURED" key="1">
                 <h1 className="featuredTitle">Today Is The Day</h1>
                 <div className="albums">
-                  {library.map((e) => (
-                    <Link to="/album" state={e} className="albumSelection">
+                  {library.map((e, index) => (
+                    <Link key={index} to="/album" state={e} className="albumSelection">
                       <img
                         src={e.image}
                         alt="bull"
@@ -28,8 +28,8 @@ const Home = () => {
               <TabPane tab="GENRES & MOODS" key="2">
                 <h1 className="featuredTitle">Pop Music</h1>
                 <div className="albums">
-                  {library.slice(7, 13).map((e) => (
-                    <Link to="/album" state={e} className="albumSelection">
+                  {library.slice(7, 13).map((e, index) => (
+                    <Link key={index} to="/album" state={e} className="albumSelection">
                       <img
                         src={e.image}
                         alt="bull"
@@ -41,8 +41,8 @@ const Home = () => {
                 </div>
                 <h1 className="featuredTitle">Top Hits</h1>
                 <div className="albums">
-                  {library.slice(5, 11).map((e) => (
-                    <Link to="/album" state={e} className="albumSelection">
+                  {library.slice(5, 11).map((e, index) => (
+                    <Link key={index} to="/album" state={e} className="albumSelection">
                       <img
                         src={e.image}
                         alt="bull"
@@ -54,8 +54,8 @@ const Home = () => {
                 </div>
                 <h1 className="featuredTitle">Country</h1>
                 <div className="albums">
-                  {library.slice(0, 6).map((e) => (
-                    <Link to="/album" state={e} className="albumSelection">
+                  {library.slice(0, 6).map((e, index) => (
+                    <Link key={index} to="/album" state={e} className="albumSelection">
                       <img
                         src={e.image}
                         alt="bull"
@@ -67,8 +67,8 @@ const Home = () => {
                 </div>
                 <h1 className="featuredTitle">Classics</h1>
                 <div className="albums">
-                  {library.slice(5, 11).map((e) => (
-                    <Link to="/album" state={e} className="albumSelection">
+                  {library.slice(5, 11).map((e, index) => (
+                    <Link key={index} to="/album" state={e} className="albumSelection">
                       <img
                         src={e.image}
                         alt="bull"
@@ -82,8 +82,8 @@ const Home = () => {
               <TabPane tab="NEW RELEASES" key="3">
                 <h1 className="featuredTitle">Hot Off The Press</h1>
                 <div className="albums">
-                  {library.map((e) => (
-                    <Link to="/album" state={e} className="albumSelection">
+                  {library.map((e, index) => (
+                    <Link key={index} to="/album" state={e} className="albumSelection">
                       <img
                         src={e.image}
                         alt="bull"

@@ -94,7 +94,7 @@ const Album = ({ setNftAlbum }) => {
             }
           >
             OpenSea
-            <img src={Opensea} className="openLogo" />
+            <img src={Opensea} alt="OpenseaLogo" className="openLogo" />
           </div>
         </div>
         <div className="tableHeader">
@@ -108,18 +108,16 @@ const Album = ({ setNftAlbum }) => {
           album.map((nft, i) => {
             nft = JSON.parse(nft.metadata);
             return (
-              <>
-                <div className="tableContent">
-                  <div className="numberHeader">{i + 1}</div>
-                  <div
-                    className="titleHeader"
-                    style={{ color: "rgb(205, 203, 203)" }}
-                  >
-                    {nft.name}
-                  </div>
-                  <div className="numberHeader">{nft.duration}</div>
+              <div key={i} className="tableContent">
+                <div className="numberHeader">{i + 1}</div>
+                <div
+                  className="titleHeader"
+                  style={{ color: "rgb(205, 203, 203)" }}
+                >
+                  {nft.name}
                 </div>
-              </>
+                <div className="numberHeader">{nft.duration}</div>
+              </div>
             );
           })}
       </div>
