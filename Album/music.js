@@ -22,6 +22,7 @@ for (let i = 0; i < media.length; i++) {
 Promise.all(promises).then(() => {
   axios
     .post("https://deep-index.moralis.io/api/v2/ipfs/uploadFolder", ipfsArray, {
+      maxBodyLength: "Infinity",
       headers: {
         "X-API-KEY":
           "<Your API Key>",
