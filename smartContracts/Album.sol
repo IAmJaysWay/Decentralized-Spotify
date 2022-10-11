@@ -14,6 +14,9 @@ contract NFT is ERC721URIStorage {
 
     constructor() ERC721("NonFungiMusic", "NFM") {
         owner = msg.sender;
+        createToken("<Put_the_IPFS_Url_here>");
+        createToken("<Put_the_IPFS_Url_here>");
+       
     }
 
     function createToken(string memory tokenURI) public returns (uint) {
